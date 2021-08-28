@@ -1,4 +1,4 @@
-# hello-world
+# Just Vibin
 Repository moment
 
 Majoring in MIS at UHM currently. Don't know much about coding to be honest, but am very interested in learning!

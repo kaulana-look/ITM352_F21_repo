@@ -18,10 +18,11 @@ h2 {
     text-align: center;
 }
 
-
-
+/* Layout */
 Main {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    background-image: url("images/phone_globe.jpg")
+    background-
 }

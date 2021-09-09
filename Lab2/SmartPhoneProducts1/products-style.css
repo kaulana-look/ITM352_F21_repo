@@ -26,3 +26,8 @@ Main {
     background-image: url("images/phone_globe.jpg")
     background-
 }
+
+div {
+    border: 5px solid black;
+    display: flex;
+}

@@ -45,17 +45,6 @@
     var tax_rate = 0.0575;
     var tax = tax_rate *subtotal;
     
-    // Compute Shipping
-    if(subtotal <= 50) {
-      shipping =2;
-    }
-    else if(subtotal <= 100) {
-      shipping = 5;
-    }
-    else {
-      shipping = 0.05*subtotal
-    }
-
     // Computer Grand Total
 
     var total = subtotal + tax;
@@ -139,13 +128,9 @@
             <td width="54%">$<script>document.write(subtotal);</script></td>
           </tr>
           <tr>
-            <td style="text-align: center;" colspan="3" width="67%"><span style="font-family: arial;">Tax @ <script>document.write(100*tax_rate);</script></span></td>
+            <td style="text-align: center;" colspan="3" width="67%"><span style="font-family: arial;">Tax @ 5.75%</span></td>
             <td width="54%">$<script>document.write(tax.toFixed(2));</script></td>
           </tr>
-          <tr>
-          <td style="text-align: center;" colspan="3" width="67%">Shipping</span></td>
-          <td width="54%">$<script>document.write(shipping.toFixed(2));</script></td>
-        </tr>
           <tr>
             <td style="text-align: center;" colspan="3" width="67%"><strong>Total</strong></td>
             <td width="54%"><strong>$<script>document.write(total.toFixed(2));</script></strong></td>

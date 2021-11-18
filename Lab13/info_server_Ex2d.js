@@ -1,14 +1,14 @@
 var express = require('express');
 var app = express();
 
-//Routh to handle any request; also calls next
+//Route to handle any request; also calls next
 app.all('*', function (request, response, next) {
     console.log(request.method + ' to path: ' + request.path);
     next();
 });
 
 //Route to handle just the path/test
-app.get('/test'), function (request, response, next) {
+app.get('/test', function (request, response, next) {
     response.send('Got a GET request to path:');
 });
 

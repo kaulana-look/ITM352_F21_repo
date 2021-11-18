@@ -1,6 +1,7 @@
 var express = require("express");
 var app = express();
 
+//Route to handle any request; also calls next
 app.all('*', function (request, response, next) {
     request.send(request.method + ' to path: ' + request.path);
     next();

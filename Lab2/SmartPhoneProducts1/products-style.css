@@ -1,5 +1,6 @@
+/* General */
 body {
-    Width: 800px;
+    width: 800px; 
     margin: 0 auto;
 }
 
@@ -19,12 +20,12 @@ h2 {
 }
 
 /* Layout */
-Main {
+main {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    background-image: url("images/phone_globe.jpg")
-    background-
+    background-image: url("images/phone_globe.jpg");
+    background-repeat: no-repeat;
 }
 
 div {

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+</head>
+<body>
+    <script>
+            let parans = (new URL(document.location)).searchParams;
+            let GET = {};
+            parans.forEach(function (value, key) { GET[key] = value; document.write("<BR>Got" + value) });
+    </script>
+
+
+    <form name="my_form" action="" method="GET">
+        <label>This is a form:</label>
+        <br>
+        <input type="email" name="my_email" value="x@y.com">
+        <br>
+        <SELECT name="select_box">
+            <OPTION value="Regular">Regular</OPTION>
+            <OPTION value="special">Special</OPTION> 
+        </SELECT>
+
+        <br>
+        <input type="submit" value="Purchase">
+    </form>
+</body>
+
+</html>
